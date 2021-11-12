@@ -1,0 +1,26 @@
+<div class="heroes__container">
+    <h2>My Heroes</h2>
+    <!-- Условная отрисовка -->
+    <div class="hero-name" *ngIf="selectedHero">
+        <h2>name: {{selectedHero.name | uppercase}}</h2>
+    </div>
+    <div class="input-wrapper">
+        <input id="name" placeholder="add person...">
+    </div>
+
+    <ul class="heroes">
+        <!-- Отрисовка через цикл -->
+        <li *ngFor="let hero of heroes">
+            <!-- Добавление класса при активном состоянии -->
+            <a [class.selected]="hero===selectedHero" class="hero__name" (click)="onSelect(hero)">
+                <div class=" hero__id">{{hero.id}}</div>
+                {{hero.name}}
+            </a>
+            <div class="hero__button-wrapper">
+                <button class="button hero__button">open</button>
+                <button class="button hero__button">delete</button>
+            </div>
+        </li>
+    </ul>
+</div>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>

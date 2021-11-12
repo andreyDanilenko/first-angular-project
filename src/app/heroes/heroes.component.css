@@ -1,0 +1,97 @@
+.heroes__container {
+    margin-top: 30px;
+}
+
+.hero-name {
+    margin-top: 10px;
+}
+
+.input-wrapper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.input-wrapper label {
+    font-size: 20px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4682b4;
+}
+
+.heroes {
+    color: #fffafa;
+    margin-top: 20px;
+}
+
+.heroes li {
+    position: relative;
+}
+
+.heroes a {
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #b0c4de;
+    border: 1px solid #4682b4;
+}
+
+.hero__id {
+    margin-right: 10px;
+}
+
+.heroes a.selected {
+    background-color: #4682b4;
+}
+
+.heroes li:hover {
+    margin-left: 2px;
+}
+
+.hero__button-wrapper {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.hero__button {
+    display: block;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #b0c4de;
+    margin-right: 5px;
+    border: 1px solid #4682b4;
+}
+
+.hero__button {
+    font-size: 16px;
+    color: #fffafa;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #b0c4de;
+    margin-right: 5px;
+    border: 1px solid #4682b4;
+}
+
+.hero__button:hover {
+    background-color: #4682b4;
+}
+
+.hero__button:active {
+    background-color: #dcdcdc;
+}
